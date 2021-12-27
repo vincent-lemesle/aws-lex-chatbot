@@ -50,7 +50,7 @@ function App() {
           >
             <CloseIcon onClick={() => setChat(false)} style={{ fontSize: 30, marginLeft: 10, marginTop: 10, cursor: 'pointer' }} />
             <div style={{ paddingLeft: 30, paddingBottom: 30, paddingRight: 30, paddingTop: 5 }}>
-              <iframe title="bot" src={'https://d4r1lf9symihg.cloudfront.net'} width={650} height={500} />
+              <iframe title="bot" src={'https://d4r1lf9symihg.cloudfront.net'} width={650} height={500} frameBorder="0" style={{ borderRadius: 15 }} />
             </div>
           </div>
         ) : null
