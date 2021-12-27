@@ -33,7 +33,7 @@ function App() {
   )
 
   return (
-    <div style={{ backgroundColor: '#37424a' }}>
+    <div style={{ backgroundColor: '#37424a', paddingBottom: 50 }}>
       <Header />
       {
         isChat ? (
@@ -81,7 +81,14 @@ function App() {
           <Grid container spacing={2}>
             {lessons.map((lesson) => (
               <Grid item xs={3}>
-                <Card title={lesson.title} content={lesson.content} date={lesson.date} image={lesson.image} />
+                <Card
+                  id={lesson.id}
+                  idColor={lesson.idColor}
+                  title={lesson.title}
+                  content={lesson.content}
+                  date={lesson.date}
+                  image={lesson.image}
+                />
               </Grid>
             ))}
           </Grid>
@@ -91,7 +98,14 @@ function App() {
           <Grid container spacing={2}>
             {exercises.map((exercise) => (
               <Grid item xs={3}>
-                <Card title={exercise.title} content={exercise.content} date={exercise.date} image={exercise.image} />
+                <Card
+                  id={exercise.id}
+                  idColor={exercise.idColor}
+                  title={exercise.title}
+                  content={exercise.content}
+                  date={exercise.date}
+                  image={exercise.image}
+                />
               </Grid>
             ))}
           </Grid>
