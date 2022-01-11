@@ -77,10 +77,10 @@ function App() {
         </div>
       </div>
       <div style={{ zIndex: 2 }}>
-        <Typography variant="h5" style={{ color: '#FFD600', paddingTop: 70, paddingLeft: 50 }}>English</Typography>
+        <Typography variant="h5" style={{ color: '#FFD600', paddingTop: 70, paddingLeft: 50 }}>Maths</Typography>
         <Box sx={{ flexGrow: 1, width: '90%', marginLeft: '5%', marginTop: 3 }}>
           <Grid container spacing={2}>
-            {english.map((lesson) => (
+            {maths.map((lesson) => (
               <Grid item xs={3}>
                 <Card
                   id={lesson.id}
@@ -94,10 +94,27 @@ function App() {
             ))}
           </Grid>
         </Box>
-        <Typography variant="h5" style={{ color: '#FFD600', paddingTop: 40, paddingLeft: 50 }}>Maths</Typography>
+        <Typography variant="h5" style={{ color: '#FFD600', paddingTop: 40, paddingLeft: 50 }}>English</Typography>
         <Box sx={{ flexGrow: 1, width: '90%', marginLeft: '5%', marginTop: 3 }}>
           <Grid container spacing={2}>
-            {maths.map((exercise) => (
+            {english.map((exercise) => (
+              <Grid item xs={3}>
+                <Card
+                  id={exercise.id}
+                  idColor={exercise.idColor}
+                  title={exercise.title}
+                  content={exercise.content}
+                  date={exercise.date}
+                  image={exercise.image}
+                />
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
+        <Typography variant="h5" style={{ color: '#FFD600', paddingTop: 40, paddingLeft: 50 }}>Spanish</Typography>
+        <Box sx={{ flexGrow: 1, width: '90%', marginLeft: '5%', marginTop: 3 }}>
+          <Grid container spacing={2}>
+            {spanish.map((exercise) => (
               <Grid item xs={3}>
                 <Card
                   id={exercise.id}
